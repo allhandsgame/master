@@ -1,0 +1,255 @@
+/** Copyright Michael Ortali 2013. All Rights Reserved. */
+
+/**
+ * Stylesheets for All Hands.
+ *
+ * @author michael@xethorn.net (Michael Ortali)
+ */
+
+
+/**
+ * Lightweight reset.
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+legend {
+  border: 0;
+}
+
+header,
+nav {
+  display: block;
+}
+
+header strong {
+  text-transform: uppercase;
+}
+
+a {
+  color: #333;
+}
+
+ul {
+  margin-bottom: 10px;
+}
+
+
+/**
+ * Quick classes to apply.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/**
+ * Chrome styles.
+ */
+
+body {
+  background: #f3f3f3;
+  color: #333;
+  font-family: arial, sans-serif;
+}
+
+/**
+ * Header styles.
+ */
+
+#header {
+  float: left;
+  width: 165px;
+  height: 100%;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+#logo-part1,
+#logo-part2 {
+  display: block;
+}
+
+#logo-part1 {
+  margin-bottom: -6px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 114px;
+  line-height: 90px;
+  text-align: center;
+}
+
+#logo-part2 {
+  font-family: 'Sanchez', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+#header-nav {
+  list-style-type: none;
+}
+
+#header-nav {
+  background: #353535;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+#header-nav a {
+  display: block;
+  padding: 5px;
+  color: #eee;
+  text-decoration: none;
+}
+
+#header-nav a:hover {
+  background: #111;
+}
+
+
+/**
+ * Page layout.
+ */
+
+#page {
+  padding: 30px 5px;
+  overflow: hidden;
+}
+
+#page h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#page h3 {
+  margin-bottom: 10px;
+}
+
+#page p {
+  margin-bottom: 10px;
+}
+
+#page summary {
+  margin-bottom: 20px;
+}
+
+#page summary p {
+  font-size: 18px;
+}
+
+
+/**
+ * Card list: shows several cards;
+ */
+
+.card-list {
+  margin: 10px 0;
+}
+
+.card-list li {
+  display: inline;
+}
+
+.card {
+  position: relative;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  float: left;
+  background: #fff;
+  width: 200px;
+  height: 200px;
+  margin-right: 15px;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.player {
+  display: inline-block;
+  width: 465px;
+  margin-right: 10px;
+}
+
+.card-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  border-radius: 3px;
+  -moz-transition: opacity ease-out .1s;
+  -webkit-transition: opacity ease-out .1s;
+}
+
+.card:hover .card-icon,
+.card-icon:hover {
+  cursor: hand;
+  opacity: .75;
+}
+
+.card-radio {
+  opacity: 0;
+}
+
+.card-radio:checked + .card-icon,
+.card.visible .card-icon {
+  opacity: 1;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, .40);
+  -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, .40);
+  -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, .40);
+}
+
+.card-label {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom:  0;
+  color: rgba(0, 0, 0, .45);
+  text-shadow: 0 0 4px rgba(0, 0, 0, .45);
+  font-size: 29px;
+}
+
+.card-icon:hover + .card-label,
+.card-label:hover,
+.card.visible .card-label,
+.card-radio:checked ~ .card-label {
+  color: #000;
+}
+
+
+/**
+ * Button layout.
+ */
+
+.button {
+  display: inline-block;
+  font-size: 13px;
+  padding: 7px 15px;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button,
+a.button {
+  color: #444;
+}
+
+.button:hover {
+  background: #e0e0e0;
+}
+
+.button:active {
+  box-shadow: inset 0 1px 1px #c0c0c0;
+}

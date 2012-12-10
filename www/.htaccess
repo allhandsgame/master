@@ -1,0 +1,6 @@
+Options FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^$ /requesthandler.php?controller=Index
+RewriteRule ^(play|result|scores|start)$ /requesthandler.php?controller=$1
+ErrorDocument 404 /requesthandler.php?controller=error404
