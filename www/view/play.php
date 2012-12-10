@@ -10,8 +10,8 @@
       </h3>
       <p>
         <?php if ($isMachine) { ?>
-          Nothing to do, the robot will automatically pick up the hand. Click
-          on the button "Get results" once you've made your mind.
+          The machine will automatically pick a hand. Please click on Next below
+          once you want to learn the results!
         <?php } else { ?>
           Please select your hand.
         <?php } ?>
@@ -22,7 +22,7 @@
             <label class="card visible">
               <input class="card-radio" type="radio" name="hand" value="robot" checked>
               <img class="card-icon" width="100%" src="/static/image/player-robot.jpg">
-              <span class="card-label">Robot</span>
+              <span class="card-label">Machine</span>
             </label>
           </li>
         <?php } else { ?>

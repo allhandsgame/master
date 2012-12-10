@@ -2,10 +2,10 @@
   <h2>Welcome to All Hands Game!</h2>
   <summary>
     <p>
-      The All Hands Game is based of the same rules as
-      <a href="http://en.wikipedia.org/wiki/Rock-paper-scissors">Paper Rock Scissors</a>.
-      You can play with with a friend or against the machine. Take a minute to
-      get started by selecting the type of players.
+      The All Hands Game is based on the same rules as
+      <a href="http://en.wikipedia.org/wiki/Rock-paper-scissors">Rock Paper Scissors</a>.
+      You can play with with a friend or against the computer. Take a minute to
+      get started by choosing the playing mode now.
     </p>
   </summary>
 
@@ -27,7 +27,7 @@
                 <input class="card-radio" type="radio" name="player<?php echo $i ?>" value="machine">
                 <img class="card-icon" width="100%" src="/static/image/player-robot.jpg">
                 <span class="card-label">
-                  Machine
+                  Computer
                 </span>
               </label>
             </li>
