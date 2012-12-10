@@ -25,7 +25,7 @@ class ControllerResult extends ControllerBase {
       $this->_display['gameWinner'] = $game->findWinner();
       $game->save(true);
     } catch(Exception $e) {
-      $this->templateName = '/noresults';
+      $this->templateName = '/play';
     }
   }
 }
