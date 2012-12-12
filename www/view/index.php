@@ -14,11 +14,13 @@
         <span id="logo-part2">Hands</span>
       </h1>
       <nav id="header-nav">
-        <?php if (!empty($t->game)) { ?>
-          <li><a href="/play">Resume</a></li>
-        <?php } ?>
-        <li><a href="/">New game</a></li>
-        <li><a href="/scores">Scores</a></li>
+        <ul>
+          <?php if (!empty($t->game)) { ?>
+            <li><a href="/play">Resume</a></li>
+          <?php } ?>
+          <li><a href="/">New game</a></li>
+          <li><a href="/scores">Scores</a></li>
+        </ul>
       </nav>
     </header>
     <div id="page">

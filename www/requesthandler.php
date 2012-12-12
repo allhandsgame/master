@@ -13,7 +13,7 @@ import('lib/template');
 
 class RequestHandler {
   /**
-   * @type {RequestHandler  }
+   * @type {RequestHandler}
    */
   private static $_instance = null;
 
@@ -145,9 +145,10 @@ try {
 }
 catch(Exception $e) {
   if (false === DEBUG) {
-    echo "Something went wrong";
     if($e->getMessage() == ERROR404) {
       echo RequestHandler::get404();
+    } else {
+      echo "Something went wrong";
     }
   }
   else {
