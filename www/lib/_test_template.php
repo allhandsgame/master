@@ -37,7 +37,5 @@ class TestTemplateEcho extends UnitTestCase {
     $this->assertEqual($this->get("'foo'"), "&#039;foo&#039;");
     $this->assertEqual($this->get('"foo"'), '&quot;foo&quot;');
   }
-
-
 }
 ?>
